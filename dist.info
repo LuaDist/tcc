@@ -1,0 +1,8 @@
+name = "tcc"
+version = "0.9.25"
+
+desc = "Small but fast C compiler.  Supports ANSI C, most of the new ISO C99 standard, and many GNUC extensions, including inline assembly."
+author = "Fabrice Bellard"
+license = "LGPL"
+url = "http://bellard.org/tcc/"
+maintainer = "Peter Drahoš"
