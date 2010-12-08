@@ -138,12 +138,11 @@ ADD_CUSTOM_TARGET(libtcc1 ALL DEPENDS libtcc1.a)
 
 
 # Install files.
-INSTALL(TARGETS tcc RUNTIME DESTINATION ${INSTALL_BIN})
-INSTALL(TARGETS libtcc ARCHIVE DESTINATION ${INSTALL_LIB})
+INSTALL(TARGETS tcc libtcc RUNTIME DESTINATION ${INSTALL_BIN} LIBRARY DESTINATION ${INSTALL_LIB} ARCHIVE DESTINATION ${INSTALL_LIB})
 INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/libtcc1.a DESTINATION ${INSTALL_LIB}/tcc)
 INSTALL(FILES libtcc.h DESTINATION ${INSTALL_INC})
 INSTALL(FILES tcc-doc.html DESTINATION ${INSTALL_DOC})
-INSTALL(FILES include/stdarg.h include/stddef.h include/stdbool.h include/float.h include/varargs.h include/tcclib.h DESTINATION ${INSTALL_LIB}/tcc/include)
+INSTALL(FILES include/stdarg.h include/stddef.h include/stdbool.h include/float.h include/varargs.h include/tcclib.h DESTINATION ${INSTALL_INC}/tcc/include)
 INSTALL(FILES README COPYING DESTINATION ${INSTALL_DATA})
 IF(WIN32 AND NOT CYGWIN)
   INSTALL(TARGETS tcc RUNTIME DESTINATION ${INSTALL_BIN})
@@ -187,7 +186,7 @@ IF(WIN32 AND NOT CYGWIN)
     win32/include/wchar.h
     win32/include/wctype.h
     win32/include/_mingw.h
-    DESTINATION ${INSTALL_LIB}/tcc/include)
+    DESTINATION ${INSTALL_INC}/tcc/include)
   INSTALL(FILES
     win32/include/sys/fcntl.h
     win32/include/sys/file.h
@@ -198,7 +197,7 @@ IF(WIN32 AND NOT CYGWIN)
     win32/include/sys/types.h
     win32/include/sys/unistd.h
     win32/include/sys/utime.h
-    DESTINATION ${INSTALL_LIB}/tcc/include/sys)
+    DESTINATION ${INSTALL_INC}/tcc/include/sys)
   INSTALL(FILES
     win32/include/winapi/basetsd.h
     win32/include/winapi/basetyps.h
@@ -215,7 +214,7 @@ IF(WIN32 AND NOT CYGWIN)
     win32/include/winapi/winsvc.h
     win32/include/winapi/winuser.h
     win32/include/winapi/winver.h
-    DESTINATION ${INSTALL_LIB}/tcc/include/winapi)
+    DESTINATION ${INSTALL_INC}/tcc/include/winapi)
   INSTALL(FILES
     win32/lib/gdi32.def
     win32/lib/msvcrt.def
