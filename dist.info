@@ -1,0 +1,103 @@
+type = "x86"
+arch = "Windows"
+author = "Fabrice Bellard"
+desc = "Small but fast C compiler.  Supports ANSI C, most of the new ISO C99 standard, and many GNUC extensions, including inline assembly."
+name = "tcc"
+maintainer = "Peter Drahoš"
+files = {
+Runtime = {
+[[bin\tcc.exe]],
+}
+,
+Header = {
+[[include\libtcc.h]],
+[[include\tcc\include\stdarg.h]],
+[[include\tcc\include\stddef.h]],
+[[include\tcc\include\stdbool.h]],
+[[include\tcc\include\float.h]],
+[[include\tcc\include\varargs.h]],
+[[include\tcc\include\tcclib.h]],
+[[include\tcc\include\assert.h]],
+[[include\tcc\include\conio.h]],
+[[include\tcc\include\ctype.h]],
+[[include\tcc\include\dir.h]],
+[[include\tcc\include\direct.h]],
+[[include\tcc\include\dirent.h]],
+[[include\tcc\include\dos.h]],
+[[include\tcc\include\errno.h]],
+[[include\tcc\include\excpt.h]],
+[[include\tcc\include\fcntl.h]],
+[[include\tcc\include\fenv.h]],
+[[include\tcc\include\float.h]],
+[[include\tcc\include\inttypes.h]],
+[[include\tcc\include\io.h]],
+[[include\tcc\include\limits.h]],
+[[include\tcc\include\locale.h]],
+[[include\tcc\include\malloc.h]],
+[[include\tcc\include\math.h]],
+[[include\tcc\include\mem.h]],
+[[include\tcc\include\memory.h]],
+[[include\tcc\include\process.h]],
+[[include\tcc\include\setjmp.h]],
+[[include\tcc\include\share.h]],
+[[include\tcc\include\signal.h]],
+[[include\tcc\include\stdarg.h]],
+[[include\tcc\include\stdbool.h]],
+[[include\tcc\include\stddef.h]],
+[[include\tcc\include\stdint.h]],
+[[include\tcc\include\stdio.h]],
+[[include\tcc\include\stdlib.h]],
+[[include\tcc\include\string.h]],
+[[include\tcc\include\tchar.h]],
+[[include\tcc\include\time.h]],
+[[include\tcc\include\unistd.h]],
+[[include\tcc\include\values.h]],
+[[include\tcc\include\varargs.h]],
+[[include\tcc\include\wchar.h]],
+[[include\tcc\include\wctype.h]],
+[[include\tcc\include\_mingw.h]],
+[[include\tcc\include\sys\fcntl.h]],
+[[include\tcc\include\sys\file.h]],
+[[include\tcc\include\sys\locking.h]],
+[[include\tcc\include\sys\stat.h]],
+[[include\tcc\include\sys\time.h]],
+[[include\tcc\include\sys\timeb.h]],
+[[include\tcc\include\sys\types.h]],
+[[include\tcc\include\sys\unistd.h]],
+[[include\tcc\include\sys\utime.h]],
+[[include\tcc\include\winapi\basetsd.h]],
+[[include\tcc\include\winapi\basetyps.h]],
+[[include\tcc\include\winapi\winbase.h]],
+[[include\tcc\include\winapi\wincon.h]],
+[[include\tcc\include\winapi\windef.h]],
+[[include\tcc\include\winapi\windows.h]],
+[[include\tcc\include\winapi\winerror.h]],
+[[include\tcc\include\winapi\wingdi.h]],
+[[include\tcc\include\winapi\winnetwk.h]],
+[[include\tcc\include\winapi\winnls.h]],
+[[include\tcc\include\winapi\winnt.h]],
+[[include\tcc\include\winapi\winreg.h]],
+[[include\tcc\include\winapi\winsvc.h]],
+[[include\tcc\include\winapi\winuser.h]],
+[[include\tcc\include\winapi\winver.h]],
+}
+,
+Documentation = {
+[[share\tcc\doc\tcc-doc.html]],
+}
+,
+Data = {
+[[share\tcc\README]],
+[[share\tcc\COPYING]],
+}
+,
+Library = {
+[[lib\liblibtcc.a]],
+[[lib\tcc\libtcc1.a]],
+}
+,
+}
+
+license = "LGPL"
+url = "http://bellard.org/tcc/"
+version = "0.9.25"
