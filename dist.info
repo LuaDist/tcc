@@ -1,0 +1,40 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Fabrice Bellard"
+desc = "Small but fast C compiler.  Supports ANSI C, most of the new ISO C99 standard, and many GNUC extensions, including inline assembly."
+name = "tcc"
+maintainer = "Peter Drahoš"
+files = {
+Runtime = {
+[[bin/tcc]],
+}
+,
+Header = {
+[[include/libtcc.h]],
+[[include/tcc/include/stdarg.h]],
+[[include/tcc/include/stddef.h]],
+[[include/tcc/include/stdbool.h]],
+[[include/tcc/include/float.h]],
+[[include/tcc/include/varargs.h]],
+[[include/tcc/include/tcclib.h]],
+}
+,
+Documentation = {
+[[share/tcc/doc/tcc-doc.html]],
+}
+,
+Data = {
+[[share/tcc/README]],
+[[share/tcc/COPYING]],
+}
+,
+Library = {
+[[lib/liblibtcc.a]],
+[[lib/tcc/libtcc1.a]],
+}
+,
+}
+
+license = "LGPL"
+url = "http://bellard.org/tcc/"
+version = "0.9.25"
